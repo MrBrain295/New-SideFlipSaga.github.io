@@ -47,12 +47,40 @@
 <!--Licenses and stuff-->
 <p> "Rabbits / Kaninchen" by Robobobobo is licensed with CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/ </p>
 </footer>
-<link rel="stylesheet" href="CSS/Main.css" media="screen"/>
-<!--Links my CSS also-->
-<link rel="stylesheet" href="CSS/iframe.css" media="screen"/>
-<!--Links the style sheet for my iframe-->
-<script src="JS/Main.js"></script>
-<script src="JS/Text.js"></script>
-<!--Links my JS-->
+<style type="text/css">/*Tells the browser this is styleing the body.*/
+body {
+  /*Sorry I know this CSS is kinda self explanitary but comments might help.*/
+font-family: sans-serif;
+  /*Tells the browser what fonts to use.*/
+margin-left: auto;
+margin-right: auto;
+  /*Tells the browser the margins.*/
+max-width: 1080px;
+  /*Tells the browser the max width.*/
+padding-top: 8px;
+padding-bottom: 24px;
+padding-left: 20px;
+padding-right: 24px;
+  /*Tells the browser how much space in from the sides should the stuff go.*/
+  } </style>
+<style type="text/css">iframe {
+margin: 0;
+
+padding: 0;
+
+border: none;
+
+width: 500px;
+
+height: 300px;
+  }</style>
+<script>colors=["lab(12.98 , 47.51 , -64.70)","thistle","gold","lightgreen","brown","lightblue","pink","orange","grey","green","teal","red","purple","blue","yellow","hotpink","#800000","#d872c6","#cc9320","blanchedalmond","lightgoldenrodyellow","cornflowerblue","darkgoldenrod","chocolate","rgba(0, 102, 85, 0.71)","#bbd5cc","#60a0a2"]
+let timer=window.setInterval(changeColor, 1002);
+function changeColor(){
+	let n=Math.round(Math.random()*25);
+	document.body.style.backgroundColor=colors[n];
+}</script>
+<script>alert("Hi from the Sideflipsaga devs!");
+  console.log('%c Im bored -Side', 'color: #879E5C; font-size: 11px');</script>
 </body>
 </html>
